@@ -1,0 +1,240 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffc107;
+}
+
+.container {
+    width: 450px;
+    height: 600px;
+    border:1px solid black;
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px 5px;
+    background-color: white;
+    margin: 60px auto;
+}
+
+.input {
+    width: 400px;
+    height: 70px;
+    cursor: default;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.535);
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-top: 50px;
+    margin-left: 35px;
+}
+
+.middle {
+    display: flex;
+    margin-left: 35px;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+    width: 160px;
+}
+
+.rightside {
+    display: grid;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 150px;
+}   
+
+.buttonArif {
+    background-color: 	#0d6efd;
+}
+
+.button, .buttonArif {
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 45%;
+}
+
+.buttonArif:hover {
+    filter: brightness(0.8);
+}
+
+.button:hover {
+    text-decoration: underline;
+    filter: brightness(0.8);
+}
+
+#equelsButton {
+    text-decoration: none;
+}
+
+p {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+    color: #ffc107;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 600px;
+        height: 550px;
+    }
+
+    .input {
+        width: 400px;
+    }
+    
+    .main {
+        display: flex;
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    
+    .sidebar {
+        margin-top: 20px;
+    }
+    
+    .rightside {
+        margin-top: 20px;
+        margin-left: 165px;
+    }
+    
+    #minusButton {
+        margin-left: 40px;
+    }
+
+    #timesButton {
+        margin-left: 35px;
+    }
+
+    #divideButton {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .container {
+        width: 380px;
+    }
+
+    .input {
+        width: 350px;
+    }
+
+    .main {
+        margin-top: 50px;
+    }
+    
+    .rightside {
+        margin-top: 20px;
+        margin-left: 105px;
+    }   
+    
+    .button, .buttonArif {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 350px;
+        height: 600px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .input {
+        width: 290px;
+    }
+
+    .main {
+        margin-top: 70px;
+    }
+
+    .rightside {
+        margin-left: 90px;
+    }
+
+    .button, .buttonArif {
+        width: 50px;
+        height: 50px;
+    }
+
+    #minusButton {
+        margin-left: 50px;
+    }
+
+    p {
+        font-size: 25px;
+        margin-top: 65px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1000px;
+        margin-top: 115px;
+    }
+
+    .input {
+        width: 800px;
+    }
+
+    .main {
+        display: flex;
+        gap: 30px;
+        margin-top: 0;
+        margin-left: 280px;
+    }
+
+    .middle {
+        margin-left: 280px;
+    }
+
+    .rightside {
+        margin-left: 200px;
+    }
+
+    .button, .buttonArif {
+        width: 80px;
+        height: 70px;
+    }
+
+    #minusButton {
+        margin-left: 10px;
+    }
+
+    #timesButton {
+        margin-left: 10px;
+    }
+
+    #divideButton {
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
