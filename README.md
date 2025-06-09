@@ -1,3 +1,2 @@
 # Fronted-projects-
-Here you will find project codes written in html, css, bootstrap, sass, javascript, react.js, typescript
-and other powerful web programming languages.
+Here you can find great projects related to frontend, one of the main parts of web programming.
