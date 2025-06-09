@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+    font-family: 'Roboto';
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+a {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.586);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: 1px solid #0d6efd;
+    border-radius: 100%;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.dots {
+    cursor: pointer;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.dots:hover {
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.129);
+    border: 7px solid rgba(0, 0, 0, 0);
+    border-radius: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.brend {
+    height: 100px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+input {
+    width: 770px;
+    height: 50px;
+    padding-left: 50px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.icon {
+    position: absolute;
+    margin-right: 725px;
+    padding: 5px;
+    pointer-events: none;
+    color: grey;
+}
+
+.mic_img {
+    position: absolute;
+    height: 20px;
+    margin-left: 630px;
+    cursor: pointer;
+}
+
+.camera_img {
+    position: absolute;
+    height: 20px;
+    margin-left: 700px;
+    cursor: pointer;
+}
+
+.sites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    gap: 90px;
+}
+
+.python, .js, .chatgpt, .plus {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.129);
+    border: 15px solid rgba(0, 0, 0, 0);
+    border-radius: 100%;
+}
+
+.python, .plus {
+    margin-left: 25px;
+}
+
+.js {
+    margin-left: 5px;
+}
+
+.chatgpt {
+    margin-left: 10px;
+}
+
+.circle:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.129);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .icon {
+        margin-left: 80px;
+    }
+    
+    .mic_img {
+        margin-left: 600px;
+    }
+    
+    .camera_img {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .info {
+        justify-content: center;
+        margin-left: 560px;
+    }
+    
+    .logo {
+        justify-content: center;
+        margin-left: 300px;
+    }
+    
+    .search {
+        justify-content: center;
+        margin-left: 300px;
+    }
+    
+    input {
+        min-width: 600px;
+    }
+    
+    .icon {
+        margin-left: 170px;
+    }
+    
+    .mic_img {
+        margin-left: 480px;
+    }
+    
+    .camera_img {
+        margin-left: 600px;
+    }
+
+    .sites {
+        justify-content: center;
+        margin-left: 280px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .info {
+        justify-content: flex-start;
+        margin-left: 650px;
+    }
+    
+    .logo {
+        justify-content: flex-start;
+        margin-left: 280px;
+    }
+    
+    .search {
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+    
+    input {
+        min-width: 600px;
+    }
+    
+    .icon {
+        margin-left: 10px;
+    }
+    
+    .mic_img {
+        margin-left: 520px;
+    }
+    
+    .camera_img {
+        margin-left: 550px;
+    }
+
+    .sites {
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google search | Clone</title>
+    <link rel="stylesheet" href="google_search.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="info">
+            <a href="#" id="mail" data-url="https://www.mail.com">mail</a>
+            <a href="#" aria-disabled="true" title="Disabled">pictures</a>
+            <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <circle cx="4" cy="4" r="2"/>
+                <circle cx="12" cy="4" r="2"/>
+                <circle cx="20" cy="4" r="2"/>
+                <circle cx="4" cy="12" r="2"/>
+                <circle cx="12" cy="12" r="2"/>
+                <circle cx="20" cy="12" r="2"/>
+                <circle cx="4" cy="20" r="2"/>
+                <circle cx="12" cy="20" r="2"/>
+                <circle cx="20" cy="20" r="2"/>
+              </svg>
+              <h2>MY</h2>              
+        </div>
+    </div>
+
+    <div class="main_block">
+
+        <!-- Google logo -->
+        <div class="logo">
+            <img src="photos/Google logo.png" alt="Google logo" class="brend">
+        </div>
+    
+        <!-- Search block -->
+        <div class="search">
+            <input type="search" id="search" placeholder="Search">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <img src="photos/Google mic.png" alt="Googlemic" id="mic_img" class="mic_img">
+            <img src="photos/Google camera.png" alt="Googlecamera" class="camera_img">
+        </div>
+
+    </div>
+
+    <!-- Sites -->
+    <div class="sites">
+        <div class="circle" data-url="https://www.python.org/">
+            <img src="photos/python.png" alt="Python logo" id="python" class="python">
+            <p>Programming...</p>
+        </div>
+        <div class="circle" data-url="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <img src="photos/JavaScript.svg" alt="Javascript logo" id="js" class="js">
+            <p>Web dev..</p>
+        </div>
+        <div class="circle" class="circle" data-url="https://chat.openai.com/">
+            <svg class="chatgpt" id="chatgpt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-openai" viewBox="0 0 16 16">
+                <path d="M14.949 6.547a3.94 3.94 0 0 0-.348-3.273 4.11 4.11 0 0 0-4.4-1.934A4.1 4.1 0 0 0 8.423.2 4.15 4.15 0 0 0 6.305.086a4.1 4.1 0 0 0-1.891.948 4.04 4.04 0 0 0-1.158 1.753 4.1 4.1 0 0 0-1.563.679A4 4 0 0 0 .554 4.72a3.99 3.99 0 0 0 .502 4.731 3.94 3.94 0 0 0 .346 3.274 4.11 4.11 0 0 0 4.402 1.933c.382.425.852.764 1.377.995.526.231 1.095.35 1.67.346 1.78.002 3.358-1.132 3.901-2.804a4.1 4.1 0 0 0 1.563-.68 4 4 0 0 0 1.14-1.253 3.99 3.99 0 0 0-.506-4.716m-6.097 8.406a3.05 3.05 0 0 1-1.945-.694l.096-.054 3.23-1.838a.53.53 0 0 0 .265-.455v-4.49l1.366.778q.02.011.025.035v3.722c-.003 1.653-1.361 2.992-3.037 2.996m-6.53-2.75a2.95 2.95 0 0 1-.36-2.01l.095.057L5.29 12.09a.53.53 0 0 0 .527 0l3.949-2.246v1.555a.05.05 0 0 1-.022.041L6.473 13.3c-1.454.826-3.311.335-4.15-1.098m-.85-6.94A3.02 3.02 0 0 1 3.07 3.949v3.785a.51.51 0 0 0 .262.451l3.93 2.237-1.366.779a.05.05 0 0 1-.048 0L2.585 9.342a2.98 2.98 0 0 1-1.113-4.094zm11.216 2.571L8.747 5.576l1.362-.776a.05.05 0 0 1 .048 0l3.265 1.86a3 3 0 0 1 1.173 1.207 2.96 2.96 0 0 1-.27 3.2 3.05 3.05 0 0 1-1.36.997V8.279a.52.52 0 0 0-.276-.445m1.36-2.015-.097-.057-3.226-1.855a.53.53 0 0 0-.53 0L6.249 6.153V4.598a.04.04 0 0 1 .019-.04L9.533 2.7a3.07 3.07 0 0 1 3.257.139c.474.325.843.778 1.066 1.303.223.526.289 1.103.191 1.664zM5.503 8.575 4.139 7.8a.05.05 0 0 1-.026-.037V4.049c0-.57.166-1.127.476-1.607s.752-.864 1.275-1.105a3.08 3.08 0 0 1 3.234.41l-.096.054-3.23 1.838a.53.53 0 0 0-.265.455zm.742-1.577 1.758-1 1.762 1v2l-1.755 1-1.762-1z"/>
+            </svg>
+            <p>Ai hosting..</p>
+        </div>
+        <div class="circle">
+            <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+            <p>additional links...</p>
+        </div>
+    </div>
+
+    <script src="google_search.js"></script>
+    
+</body>
+</html>
