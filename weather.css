@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Mako&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Ubuntu&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.container {
+    width: 600px;
+    height: 700px;
+    background: linear-gradient(to bottom, #87cefa, #4682b4, #1e3c72);
+    border: 5px solid white;
+    border-radius: 50px;
+    box-shadow: 10px 5px 35px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Mako';
+    text-align: center;
+    margin-top: 35px;
+    cursor: default;
+}
+
+.location {
+    position: relative;
+}
+
+input {
+    width: 400px;
+    padding: 20px 20px 20px 50px;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-family: 'Mako';
+}
+
+svg {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    top: 60%;
+    right: 83%;
+    pointer-events: none;
+    z-index: 1;
+    color: #198754;
+}
+
+::placeholder {
+    font-size: 18px;
+    padding-left: 1px;
+}
+
+#weatherResult {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    font-family: 'Mako';
+    font-size: 17px;
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 60px;
+    border: 1px solid #0d6efd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 550px;
+        margin-top: 0;
+    }
+
+    .container {
+        margin-top: 85px;
+        width: 450px;
+        height: 700px;
+    }
+    
+    .location {
+        position: relative;
+    }
+    
+    input {
+        width: 300px;
+        margin-left: 40px;
+    }
+}
