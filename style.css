@@ -1,0 +1,66 @@
+/* Home */
+.home {
+    display: flex;
+    margin: 100px;
+    padding: 100px 50px;
+    letter-spacing: 3px;
+    background-color: #f0f5f9;
+}
+
+.ChatAi {
+    font-size: larger;
+}
+
+/* Navigation menu */
+.navbar-brand {
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .mavbar-nav .nav-link {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Features */ 
+.features {
+    display: flex;
+}
+
+/* Result */ 
+.bi {
+    font-size: 50px;
+}
+
+#icon1 {
+    color: blue;
+}
+
+#icon2 {
+    color: lightgrey;
+}
+
+#icon4 {
+    color: green;
+}
+
+/* Reviews */ 
+.reviews-container {
+    padding: 100px 50px;
+    background-color: #f0f5f9;
+}
+
+/* Pricing */
+.pricing_card {
+    background-color: #f0f5f9;
+}
+
+/* FAQ */
+.faq_container {
+    padding: 100px 50px;
+    background-color: #f0f5f9;
+}
